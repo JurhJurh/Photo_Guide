@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "FOTO_APP_EMP"

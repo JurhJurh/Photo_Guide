@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="246dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/naslov_razlage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GORIŠČNA RAZDALJA"
+                android:textStyle="bold"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="25sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/naslov_razlage">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:background="@drawable/lens_1"/>
+
+                <TextView
+                    android:id="@+id/firstparagraph"
+                    android:layout_below="@+id/image1"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Goriščna razdalja je ponavadi predstavljena v milimetrih (mm) in je osnovni opis leče kamere. Goriščna razdalja je izračunavanje optične razdalje do točke kjer se svetlobni žarki združujejo in tvorijo ostrino predmeta do digitalnega senzorja ali 35-mm filmu na goriščni razdalji. Goriščna razdalja leče se določi, ko je leča izostrena v neskončnost."
+                    android:layout_marginTop="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:id="@+id/secondparagraph"
+                    android:layout_below="@+id/firstparagraph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:layout_marginTop="20dp"
+                    android:text="Goriščna razdalja nam pove kot gledanja,koliko prizora bo zajeto, povečevanje individualnega elementa. Daljša kot je goriščna razdalja, ožji je zorni kot in večja povečava. Čim krajša je goriščna razdalja, tem širši je zorni kot in manjša je povečava."/>
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="350dp"
+                    android:layout_below="@+id/secondparagraph"
+                    android:background="@drawable/primer1"/>
+
+                <TextView
+                    android:id="@+id/primer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Primeri"
+                    android:gravity="center"
+                    android:layout_below="@+id/image2"
+                    android:layout_centerHorizontal="true"/>
+
+                <Button
+                    android:id="@+id/buttonToVaja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nadaljuj z vajo"
+                    android:layout_below="@+id/primer"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp" />
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
